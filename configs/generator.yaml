@@ -1,0 +1,17 @@
+# Plan 11, scaled down: 1,000 tasks per round instead of 50,000 (one run is about 30 min on 32 workers).
+domain: positive3
+max_degree: 3
+extra_features:
+  - "cyc[a/(b+c)]"
+  - "cyc[a/b]"
+  - "cyc[a^2/(b+c)]"
+  - "cyc[a/(a+b)]"
+  - "1"
+k_min: 4
+k_max: 12
+n_per_round: 1000
+epochs: 3
+grid_n: 30
+workers: 32
+seed: 0
+out_dir: results/generator

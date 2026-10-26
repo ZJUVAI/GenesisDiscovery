@@ -218,3 +218,14 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Local research material and generated results
+/papers/
+/reports/
+/research_notes/
+/results/
+/RESULTS.md
+/PLAN.md
+
+# Local assistant settings
+/.claude/

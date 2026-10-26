@@ -1,0 +1,18 @@
+# Version 1 algebraic run (plan 4-8). Every threshold is a field here (plan 15, rule 6).
+domain: positive3
+max_degree: 3          # enumerated symmetric features per degree
+extra_features:        # rational degree-0 family, not produced by the enumerator
+  - "cyc[a/(b+c)]"
+  - "cyc[a/b]"
+  - "cyc[a^2/(b+c)]"
+  - "cyc[a/(a+b)]"
+  - "1"
+n_tasks: 200
+exhaustive_sizes: [2, 3]   # all subsets of these sizes per degree, before the random tasks
+k_min: 4
+k_max: 12
+seed: 0
+workers: 32            # at most 48 (AGENTS.md)
+grid_n: 30             # rational grid resolution (algebra.GRID_N)
+db: results/rde_algebraic3.sqlite
+summary: results/rde_algebraic3_summary.json
